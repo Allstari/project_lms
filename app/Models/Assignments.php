@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Assignments extends Model
 {
-    //
+    protected $fillable = [
+        'title',
+        'description',
+        'due_date',
+        'course_id',
+    ];
 }
